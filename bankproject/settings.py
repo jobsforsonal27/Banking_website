@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'users',
     'accounts',
     'home',
+    'user_accounts'
 ] 
 
 MIDDLEWARE = [
@@ -94,8 +95,6 @@ DATABASES = {
 }
 
 
-# Password validation
-# https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
 AUTH_USER_MODEL = 'users.User'
 AUTH_PASSWORD_VALIDATORS = [
@@ -130,3 +129,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'ubctrainings@gmail.com'
+EMAIL_HOST_PASSWORD = 'zjih unpt yqtm zbru'
+
+EMAIL_TIMEOUT = 10
+DEFAULT_FROM_EMAIL = 'ubctrainings@gmail.com'
