@@ -2,9 +2,9 @@ from django.shortcuts import render,redirect
 from user_accounts.models import UserAccounts, EmailOtp
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib.auth import authenticate,login 
 from django.contrib import messages
 import random
-
 
 # Create your views here.
 
@@ -40,7 +40,7 @@ def signup(request):
             subject = "Welcome to My Bank",
             message= f"Hi {fname}, welcome to my bank. your username setup is successfull",
             from_email = settings.DEFAULT_FROM_EMAIL,
-            recipient_list= [email]
+            recipient_list= {email}
         )
         return render(request,'user_accounts/signin.html')
     return render(request,'user_accounts/signup.html')

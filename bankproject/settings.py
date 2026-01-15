@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)pf-x7jwto5lq*kp@-76+8c4%4o#qg9pq0x824s82jj6t7!3nx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -137,8 +137,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = 'ubctrainings@gmail.com'
-EMAIL_HOST_PASSWORD = 'zjih unpt yqtm zbru'
+EMAIL_HOST_USER = 'tff00001@gmail.com'
+EMAIL_HOST_PASSWORD = 'ejst alvj avuy ojpx'
 
 EMAIL_TIMEOUT = 10
-DEFAULT_FROM_EMAIL = 'ubctrainings@gmail.com'
+DEFAULT_FROM_EMAIL = 'tff00001@gmail.com'
