@@ -4,4 +4,4 @@ sqlparse==0.5.5
 tzdata==2025.3
 Django>=4.2
 psycopg[binary]
-
+gunicorn
