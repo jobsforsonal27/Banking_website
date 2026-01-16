@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'banking_db',
         'USER': 'test',
         'PASSWORD': 'test123',
-        'HOST': 'localhost',
+        'HOST': '34.201.103.112',
         'PORT': '5432',
     }
 }
